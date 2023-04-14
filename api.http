@@ -1,0 +1,103 @@
+
+// Home
+GET http://localhost:8000
+
+#####################################################################################################################################
+
+### Get all suppliers
+GET http://localhost:8000/suppliers
+
+### Get detail supplier
+GET http://localhost:8000/suppliers/1
+
+### Create supplier data
+POST http://localhost:8000/suppliers
+Content-Type: application/json
+
+{
+    "name": "PT Apalah",
+    "address": "Jakarta"
+}
+
+### Update supplier data
+PUT http://localhost:8000/suppliers/1
+Content-Type: application/json
+
+{
+    "name": "Ganti PT"
+    // "description": "Ganti description"
+}
+
+### Delete supplier data
+DELETE  http://localhost:8000/suppliers/1
+
+#####################################################################################################################################
+
+### Get all components
+GET http://localhost:8000/components
+
+
+### Get detail component
+GET http://localhost:8000/components/1
+
+
+### Create component data
+POST http://localhost:8000/components
+Content-Type: application/json
+
+{
+    "name": "lorem ipsum",
+    "description": "lorem ipsum"
+}
+
+
+### Update component data
+PUT http://localhost:8000/components/1
+Content-Type: application/json
+
+{
+    "name": "Ganti judul"
+    // "description": "Ganti description"
+}
+
+
+### Delete component data
+DELETE  http://localhost:8000/components/1
+
+#####################################################################################################################################
+
+### Get all product_components
+GET http://localhost:8000/product_components
+
+
+### Get detail product_component
+GET http://localhost:8000/product_components/1
+
+
+### Create product_component data
+POST http://localhost:8000/product_components
+Content-Type: application/json
+
+{
+    "product_id": 1,
+    "component_id": 1
+}
+
+
+### Update product_component data
+PUT http://localhost:8000/product_components/1
+Content-Type: application/json
+
+{
+    "name": "Ganti judul"
+    // "description": "Ganti description"
+}
+
+
+### Delete product_component data
+DELETE  http://localhost:8000/product_components/1
+
+
+
+
+
