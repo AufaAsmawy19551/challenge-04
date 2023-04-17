@@ -25,7 +25,7 @@ Content-Type: application/json
 
 {
     "name": "Ganti PT"
-    // "description": "Ganti description"
+    // "address": "Ganti address"
 }
 
 ### Delete supplier data
@@ -63,6 +63,40 @@ Content-Type: application/json
 
 ### Delete component data
 DELETE  http://localhost:8000/components/1
+
+#####################################################################################################################################
+
+### Get all products
+GET http://localhost:8000/products
+
+
+### Get detail product
+GET http://localhost:8000/products/1
+
+
+### Create product data
+POST http://localhost:8000/products
+Content-Type: application/json
+
+{
+    "name": "ini produk",
+    "quantity": 10
+}
+
+
+### Update product data
+PUT http://localhost:8000/products/1
+Content-Type: application/json
+
+{
+    "name": "Ganti judul"
+    // "quantity": 5
+}
+
+
+### Delete product data
+DELETE  http://localhost:8000/products/1
+
 
 #####################################################################################################################################
 
